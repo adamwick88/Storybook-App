@@ -5,10 +5,10 @@ const router=express.Router()
 
 //Login/Landing Page
 router.get('/', (req,res) =>{
-    res.send('Login')
+    res.render('login')
 })
 
 router.get('/dashboard', (req,res) =>{
-    res.send('Dashboard')
+    res.render('dashboard')
 })
 module.exports=router
